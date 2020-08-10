@@ -1,0 +1,20 @@
+.section-header .section-title{
+    font-size: 40px;
+}
+
+.section-header .line{
+    width: 200px;
+    background: #ddd;
+    height: 4px;
+    margin: auto;
+}
+
+.section-header .line span{
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #20599b;
+    margin: auto;
+    position: relative;
+    bottom: 0.5px;
+}

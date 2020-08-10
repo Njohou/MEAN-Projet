@@ -1,0 +1,79 @@
+<div class="jumbotron text-center">
+    <h1>Contact Us</h1>
+    <!-- <h2> Username : {{ LoginUsername }} </h2> -->
+</div>
+
+<div class="section-header text-center" style="margin-bottom: 60px;margin-top: 60px;">
+    <h2 class="section-title">Contact and send us a mail !!</h2>
+    <div class="line"><span></span></div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmitContact()">
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea type="text" id="message" formControlName= "message"
+                class="form-control" rows="15px"></textarea>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-success fa fa-send" [disabled]="contactForm.invalid"> Send Message </button>
+            </div>
+            <div class="alert alert-success" *ngIf="vrai">
+                {{ succesMessage }}
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="section-header text-center" style="margin-bottom: 60px;margin-top: 60px;">
+    <h2 class="section-title">Opinions and appreciations !!</h2>
+    <div class="line"><span></span></div>
+</div>
+
+<div class="container" style="margin-bottom: 60px;">
+    <div class="row">
+        <form [formGroup]="commentForm" (ngSubmit)="onSubmitComment()">
+            <div class="form-group">
+                <label for="post">Comment</label>
+                <textarea type="text" id="post" formControlName= "post"
+                class="form-control" rows="15px"></textarea>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-success" [disabled]="commentForm.invalid"> Add appreciation </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container" >
+    <div class="section-header text-center" style="margin-bottom: 60px;margin-top: 60px;">
+        <h2 class="section-title">Comments</h2>
+        <div class="line"><span></span></div>
+    </div>
+  <div class="col-xs-12">
+    <div class="list-group">
+      <div class="list-group-item"
+      *ngFor="let comment of Comments" style="background-color: #cce7df;">
+        <h3 class="list-group-item-heading" style="margin-bottom: 10px;">
+           {{ comment.username }}
+        </h3>
+        <p style="text-align: left;">post date : {{ comment.datePost | date : 'medium' }} </p>
+        <h4 style="text-align: center;">
+           {{ comment.post }}
+        </h4>
+      </div><br>
+    </div>
+  </div> 
+</div>
+
+<!-- <div class="media">
+    <div class="media-left">
+        <img class="media-object" src="../../../assets/imageProfil/ps4-2326600_1920.jpg" alt="image" style="width: 50px;height: 50px;border-radius: 20px 20px 20px 20px;">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Media heading</h4>
+      ...
+    </div>
+  </div> -->
+

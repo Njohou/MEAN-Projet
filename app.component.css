@@ -1,0 +1,319 @@
+body{
+    font-family: 'Times New Roman';
+}
+
+.section{
+    padding: 20px 0;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.section-header .section-title{
+    font-size: 40px;
+}
+
+.section-header .line{
+    width: 200px;
+    background: #ddd;
+    height: 4px;
+    margin: auto;
+}
+
+.section-header .line span{
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #7cb62f;
+    margin: auto;
+    position: relative;
+    bottom: 0.5px;
+}
+
+.section-header p{
+    width: 500px;
+    color: #888;
+    margin: 10px auto;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+
+.about .about-info h3 span{
+    color: #7cb62f;
+}
+
+.about .about-info .about-info-desc{
+    line-height: 1.8;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.about .about-img img{
+    width: 100%;
+}
+
+.about-info{
+    margin-bottom: 15px;
+}
+
+/*   header   */
+header{
+    height: auto;
+    padding: 10px 0;
+    /**border-bottom: 1px solid #000;**/
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+header i.icon{
+    position: absolute;
+    right: 30px;
+    top: 32px;
+    z-index: 10;
+    display: none;
+}
+
+header .logo h2{
+    font-size: 35px;
+    color: #fff;
+}
+
+header nav .nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+} 
+
+header nav .nav-list .list a{
+    display: block;
+    padding: 15px;
+    margin: 9px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    font-size: 16px;
+}
+
+header nav .nav-list .list a:hover{
+    color: #7cb62f;
+}
+
+.sticky{
+    background: #000;
+    color: #fff;
+}
+
+@media (max-width:575px){
+    header{
+        background: #000;
+    }
+
+    header nav .nav-list{
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    header .logo{
+        text-align: center;
+    }
+
+    header i.icon{
+        display: block;
+    }
+
+    .section-header p{
+        width: 80%;
+    }
+}
+
+.home{
+    height: 600px;
+    background-image: url(../assets/images/routeMbal.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home .home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.home .home-title{
+    color: #fff;
+    font-size: 47px;
+    margin-bottom: 3Opx;
+}
+
+.home .home-desc{
+    color: #fff;
+    font-size: 17px;
+}
+
+.home .button{
+    background: #7cb62f;
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    padding: 10px 0;
+    margin-right: 10px;
+}
+
+@media (max-width:575px){
+    .home .home-title{
+        font-size: 20px;
+    }
+
+    .home .button{
+        margin-bottom: 10px;
+    }
+}
+
+
+/**   Footer   **/
+
+*{
+    padding:0;
+    margin:0;
+  }
+  .header
+  {
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+
+
+  }
+
+  .header img
+  {
+    width: 170px;
+    float: left;
+  }
+
+
+
+ 
+
+  .footer
+  {
+    padding: 100px 20px 15px;
+    background-image: linear-gradient(#C0C0C0,#808080);
+    color: #fff;
+  }
+  .footer-logo
+  {
+    width: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+
+  .footer h4
+  {
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+
+  .footer p
+  {
+    font-size:15px;
+    text-align: justify;
+    padding-right: 35px;
+  }
+
+  .footer .row .fa
+  {
+    padding-right: 20px;
+    font-size: 15px;
+  }
+
+  .footer hr
+  {
+    margin-top: 10px;
+    background:#C0C0C0;
+  }
+
+  .fa-heart
+  {
+    margin: 0 5px;
+    color: #f44336;
+
+  }
+
+  .footer .copyright
+  {
+    text-align: center;
+  }
+
+  .content-table
+  {
+    border-collapse: collapse;
+    margin:25px 0;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  }
+
+  .content-table thead tr
+  {
+    background-color: #009879;
+    color:#ffffff;
+    text-align:left;
+    font-weight:bold;
+  }
+
+  .content-table th,
+  .content-table td
+  {
+    padding: 12px 15px
+  }
+  .content-table tbody tr
+  {
+    border-bottom: 1px solid #dddddd;
+
+  }
+
+  .content-table tbody tr:nth-of-type(even)
+  {
+    background-color:#f3f3f3;
+  }
+
+  .content-table tbody tr:last-of-type
+  {
+    border-bottom: 2px solid #009879;
+  }
+
+  .content-table tbody tr.active-row{
+    font-weight: bold;
+    color:#00ff7e;
+  }
+  .titre
+  {
+    font-weight: bold;
+    color:#f44336;
+  }
+
+
+
+
+/**    End       **/

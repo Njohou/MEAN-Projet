@@ -1,0 +1,38 @@
+
+
+<div class="container">
+    <form [formGroup]="researchForm" (ngSubmit)="onSubmit()" id="booking-form" class="booking-form">
+        <div class="form-group">
+            <div class="form-destination">
+                <label for="destination">Path</label>
+                <input type="text" id="destination" name="destination"
+                 placeholder="EX. Bafoussam-Douala" formControlName="Path" />
+            </div>
+            <div class="form-destination">
+                <label for="destination">Agency</label>
+                <input type="text" id="destination" name="destination"
+                 placeholder="EX. Touristique" formControlName="Agency" />
+            </div>
+            <div class="form-date-from form-icon">
+                <label for="date_from">Departure date</label>
+                <input type="text" id="date_from" class="date_from"
+                 placeholder="choisir un jour" formControlName="jourDepart" />
+            </div>
+            <div class="form-date-to form-icon">
+                <label for="date_to">Departure hour</label>
+                <input type="text" id="date_to" class="date_to"
+                 placeholder="choisir une heure" formControlName= "heureDepart" />
+            </div>
+            <div class="form-quantity">
+                <label for="quantity">Price</label>
+                <input type="number" name="quantity" id="quantity" value="0"
+                 min="0" class="nput-text qty text" formControlName="Price">
+            </div>
+            <div class="form-submit">
+                <input type="submit" id="submit" class="submit" 
+                [disabled]="researchForm.invalid" value="Valider" />
+                <!-- <button [disabled]="researchForm.invalid" id="submit" class="submit" > Valider </button> -->
+            </div>
+        </div>
+    </form>
+</div>

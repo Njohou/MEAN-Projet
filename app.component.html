@@ -1,0 +1,62 @@
+<body>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <!-- Bars icon -->
+      <i class="icon fa fa-bars fa-2x"></i>
+      <!-- Logo -->
+      <div class="col-md-3 col-xs-12">
+        <div class="logo">
+          <a href=""><img src="../assets/images/Camtravel.png" alt="Camtravel" style="width: 100px;"></a>
+        </div>
+      </div>
+      <!-- nav -->
+      <nav class="col-md-9 col-xs-12">
+        <ul class="nav-list">
+          <!-- navigation bar / routes -->
+          <li class="list" routerLinkActive="active"><a routerLink="home">Home</a></li>
+          <li class="list" routerLinkActive="active"><a routerLink="services">Services</a></li>
+          <!-- <li class="list" routerLinkActive="active"><a routerLink="about">About Us</a></li> -->
+          <li class="list" routerLinkActive="active"><a routerLink="contact">Contact Us</a></li>
+          <!-- if user is not connected, you see this part -->
+          <li class="list" *ngIf="!isAuth"><a routerLink="login"><span><i class="fa fa-sign-in fa-sm"></i></span> Sign in </a></li>
+          <li class="list" *ngIf="!isAuth"><a routerLink="register"><span><i class="fa fa-user-plus fa-sm"></i></span> Register </a></li>
+          <!-- if user is connected, you see this part -->
+          <li class="list" *ngIf="isAuth"><a style="cursor: pointer;" routerLink="/UserProfil/{{ username }}"><i class="fa fa-user-circle fa-sm"></i> Hello "{{ username }}" </a></li>
+          <li class="list" *ngIf="isAuth"><a (click)="SignOut()" style="cursor: pointer;"><span><i class="fa fa-sign-out fa-sm"></i></span> Sign out </a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+  <!--   Home    -->
+
+  <section class="section home text-center">
+    <div class="overlay">
+      <div class="container">
+        <div class="home-content">
+          <h3 class="lead home-title">
+            Start the visit of our site !!
+          </h3>
+          <p class="lead home-desc">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa quidem illo totam minus deserunt corrupti aliquid beatae laudantium asperiores voluptatibus, nisi, harum dolor laborum eaque maxime nulla cupiditate, praesentium error.
+          </p>
+          <button class="btn button">Start Now</button>
+          <button class="btn button">discover more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <router-outlet></router-outlet>
+
+  <div>
+      <footer style="text-align: center; margin-top: 60px;">
+        <i class="fa fa-copyright">Copyright groupe11 INGE3</i>
+      </footer>
+  </div>
+  
+
+</body>

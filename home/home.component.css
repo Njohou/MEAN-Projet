@@ -1,0 +1,116 @@
+.section-header .section-title{
+    font-size: 40px;
+}
+
+.section-header .line{
+    width: 200px;
+    background: #ddd;
+    height: 4px;
+    margin: auto;
+}
+
+.section-header .line span{
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #7cb62f;
+    margin: auto;
+    position: relative;
+    bottom: 0.5px;
+}
+
+.section-header p{
+    width: 500px;
+    color: #888;
+    margin: 10px auto;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+
+.about .about-info h3 span{
+    color: #7cb62f;
+}
+
+.about .about-info .about-info-desc{
+    line-height: 1.8;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.about .about-img img{
+    width: 100%;
+}
+
+.about-info{
+    margin-bottom: 15px;
+}
+
+.services{
+    background: rgb(238, 234, 234);
+}
+
+.services .serv{
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services .serv .icon{
+    background: #7cb62f;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 50%;
+
+}
+
+.services .serv-title{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.services .serv-desc{
+    font-size: 17px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/**  Contact   **/
+
+.contact{
+    background: #fff;
+}
+
+.contact .cont{
+    background: rgb(238, 234, 234);;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact .cont .icon{
+    background: #7cb62f;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.contact .cont-title{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.contact .cont-desc{
+    font-size: 17px;
+    color: #888;
+    margin-bottom: 20px;
+}
