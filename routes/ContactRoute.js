@@ -9,8 +9,8 @@ const Recommend = require('../models/recommend');
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'groupe11test@gmail.com',
-        pass: 'TestpourProjetISI11'
+        user: 'XXXXXXXXXXXXXXXXXX@XXXX.XXX',
+        pass: 'XXXXXXXXXXXXX'
     } 
 });
 
