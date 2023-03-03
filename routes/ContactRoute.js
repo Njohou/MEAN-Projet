@@ -63,8 +63,8 @@ router.post('/sendmail', (req,res)=>{
     });
 
     var mailOptions = {
-        from: 'groupe11test@gmail.com',
-        to: 'njohoulandry@gmail.com',
+        from: 'XXXXXXXXXXXX@XXXX.XXX',
+        to: 'XXXXXXXXXXX@XXXX.XXX',
         subject: 'Camtravel ,message de l\'utilisateur '+ recommend.username +', vous expose son opinion.',
         text : recommend.message
     }
