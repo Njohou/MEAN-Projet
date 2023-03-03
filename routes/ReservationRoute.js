@@ -9,8 +9,8 @@ const User = require('../models/user');
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'groupe11test@gmail.com',
-        pass: ''
+        user: 'XXXXXXXXX@XXXX.XXX',
+        pass: 'XXXXXXXXXXXXX'
     } 
 });
 
@@ -54,7 +54,7 @@ router.post('/MailCarpooler', (req,res)=>{
         }else{
             //console.log(user.email+','+user.telephone+','+user.username+','+reserve.username);
             var mailOptions = {
-                from: 'groupe11test@gmail.com',
+                from: 'XXXXXXXXXXXXXX@XXXXX.XXX',
                 to: reserve.email,
                 subject: 'Reservation de covoiturage',
                 text : 'Félicitation '+ reserve.username +', voici le numéro de téléphone de l\'utilisateur '+ user.telephone+'.'
