@@ -11,7 +11,7 @@ const programs = require('../models/programs');
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'groupe11test@gmail.com',
+        user: 'XXXXXXXXXXX@XXXXXX.XXX',
         pass: ''
     } 
 });
@@ -53,7 +53,7 @@ router.post('/TicketAllerSimple', async (req,res)=>{
                 }
                 console.log(user.email);
                 var mailOptions = {
-                    from: 'groupe11test@gmail.com',
+                    from: 'XXXXXXXXX@XXX.XXX',
                     to: user.email,
                     subject: 'Reservation de Ticket de bus',
                     attachDataUrls : true,
@@ -111,7 +111,7 @@ router.post('/TicketAllerRetour', async(req,res)=>{
                 }
                 console.log(user.email);
                 var mailOptions = {
-                    from: 'groupe11test@gmail.com',
+                    from: 'XXXXXXXXXXXX@XXXX.XXX',
                     to: user.email,
                     subject: 'Reservation de Ticket de bus',
                     html :  'Chez client '+user.username+ ', vous venez d\'acheter un ticket de bus dans l\'agence ' + ticket.agence +':' +
